@@ -34,6 +34,7 @@ body {
   width: 100%;
   padding: 3rem 9%;
   background: rgba(0, 0, 0, 0.7);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
@@ -316,7 +317,7 @@ span {
 .projects-container .projects-box {
   position: relative;
   border-radius: 2rem;
-  height: 550px;
+  height: 440px;
   overflow: hidden;
   display: flex;
 }
