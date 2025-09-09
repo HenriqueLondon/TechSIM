@@ -317,7 +317,7 @@ span {
 .projects-container .projects-box {
   position: relative;
   border-radius: 2rem;
-  height: 440px;
+  height: 330px;
   overflow: hidden;
   display: flex;
 }
@@ -635,3 +635,4 @@ span {
     width: 100%;
   }
 }
+
