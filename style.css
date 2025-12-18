@@ -299,6 +299,7 @@ span {
   width: 50px;
 }
 
+/* ===== PROJECTS SECTION ===== */
 .projects {
   background-color: var(--bg-color);
 }
@@ -384,6 +385,7 @@ span {
   opacity: 1;
 }
 
+/* ===== SKILLS SECTION ===== */
 .skills {
   background-color: var(--second-bg-color);
 }
@@ -427,6 +429,8 @@ span {
   font-weight: 500;
   margin-left: 0.5rem;
 }
+
+/* ===== CONTACT SECTION ===== */
 .contact {
   background-color: var(--second-bg-color);
 }
@@ -459,6 +463,8 @@ span {
 .contact form .btn {
   margin-top: 2rem;
 }
+
+/* ===== FOOTER ===== */
 .footer {
   position: relative;
   bottom: 0;
@@ -515,19 +521,8 @@ span {
   font-size: 16px;
   color: var(--main-color);
 }
-.back {
-  background-image: url("img/thanks.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-}
-.pix {
-  margin: 0;
-  padding: 0;
-  font-size: 14px;
-}
 
+/* ===== RESPONSIVE ===== */
 @media (max-width: 1200px) {
   html {
     font-size: 55%;
@@ -603,20 +598,6 @@ span {
   .projects h2 {
     margin-bottom: 3rem;
   }
-  .timeline-items::before {
-    left: 7px;
-  }
-  .timeline-item:nth-child(odd) {
-    padding: 0;
-    text-align: left;
-  }
-  .timeline-item:nth-child(odd),
-  .timeline-item:nth-child(even) {
-    padding-left: 37px;
-  }
-  .timeline-dot {
-    left: 0;
-  }
 }
 @media screen and (max-width: 600px) {
   .skills .container {
@@ -634,4 +615,48 @@ span {
     margin-top: 5px;
     width: 100%;
   }
+  
+  /* Ajustes para projetos no mobile */
+  .projects-container {
+    margin: 0 2rem;
+  }
+  
+  .projects-box {
+    height: 350px !important;
+  }
+  
+  .projects-info {
+    padding: 0 2rem;
+  }
+  
+  .projects-info h4 {
+    font-size: 2.4rem;
+  }
+  
+  .projects-info p {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===== CORREÇÃO PARA IMAGENS NO SKILLS ===== */
+.skills .container .bar .info img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* ===== CORREÇÃO PARA INPUT BOX NO CONTACT ===== */
+.contact form .input-box {
+  gap: 1.5rem;
+}
+
+.contact form .input-box input {
+  flex: 1 1 30rem;
+}
+
+/* ===== CORREÇÃO PARA BOTÕES NO HOME ===== */
+.btn-group {
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
 }
