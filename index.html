@@ -1,421 +1,341 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Henrique London | Frontend Developer & Digital Creator</title>
-    
-    <!-- Meta SEO -->
-    <meta name="description" content="Portfolio of Henrique London - Frontend Developer, Web Designer & Video Editor. Creating digital solutions with innovation and aesthetics.">
-    <meta name="keywords" content="frontend developer, web designer, video editor, social media, portfolio, Portugal, web development">
-    <meta name="author" content="Henrique London">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Henrique London | Digital Creator Portfolio">
-    <meta property="og:description" content="Creative digital solutions combining web development, design, and video editing.">
-    <meta property="og:image" content="https://henriquelondon.com/img/og-image.jpg">
-    <meta property="og:url" content="https://henriquelondon.com">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="en_GB">
-    
-    <!-- Twitter Cards -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@londonhenrique">
-    <meta name="twitter:title" content="Henrique London | Digital Creator">
-    
-    <!-- Favicon Moderno -->
-    <link rel="icon" href="img/favicon.ico" sizes="any">
-    <link rel="icon" href="img/icon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-    <link rel="manifest" href="site.webmanifest">
-    <meta name="theme-color" content="#ffb500">
-    
-    <!-- Preload & Preconnect -->
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="style.css" as="style">
-    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" as="style">
-    
-    <!-- Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <!-- Estilos -->
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Skip to Content -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <!-- Header -->
-    <header class="header" role="banner">
-        <a href="#home" class="logo" aria-label="Henrique London - Home">
-            Henrique <span>London</span>
-        </a>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Henrique London</title>
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="logo">Henrique <span>London</span></a>
 
-        <button class="menu-toggle" id="menu-icon" aria-label="Main menu" aria-expanded="false" aria-controls="primary-navigation">
-            <i class="bx bx-menu" aria-hidden="true"></i>
-        </button>
+      <i class="bx bx-menu" id="menu-icon"></i>
 
-        <nav class="navbar" id="primary-navigation" role="navigation" aria-label="Primary">
-            <ul class="nav-list" role="list">
-                <li><a href="#home" class="active" aria-current="page">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <!-- Main Content -->
-    <main id="main-content">
-        <!-- Home Section -->
-        <section class="home section-padding" id="home" aria-labelledby="home-heading">
-            <div class="container grid">
-                <div class="home-img" aria-hidden="true">
-                    <picture>
-                        <source srcset="img/perfil1.webp" type="image/webp">
-                        <img src="img/perfil1.png" alt="Henrique London - Professional portrait" width="400" height="400" loading="eager" decoding="async">
-                    </picture>
-                </div>
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="img/perfil1.png" alt="foto de portfolio" />
+      </div>
 
-                <div class="home-content">
-                    <h1 id="home-heading">Hi, I'm <span>Henrique</span></h1>
-                    <div class="text-animation" aria-live="polite">
-                        <span class="visually-hidden">I'm a </span>
-                        <span class="animated-text" aria-hidden="true"></span>
-                    </div>
-                    <p class="lead">
-                        I develop creative digital solutions, combining web development, 
-                        attractive design, effective social media strategies and dynamic video editing. 
-                        Each project is designed to deliver innovation, aesthetics and functionality.
-                    </p>
+      <div class="home-content">
+        <h1>Hi, It`s <span>Henrique</span></h1>
+        <h3 class="text-animation">I`m a <span></span></h3>
+        <p>
+          I develop creative digital solutions, combining web development,
+          attractive design, effective social media strategies and dynamic video
+          editing. Each project is designed to deliver innovation, aesthetics
+          and functionality, always in line with the client's needs and
+          objectives.
+        </p>
 
-                    <div class="social-icons" role="list" aria-label="Social media links">
-                        <a href="https://www.linkedin.com/in/paulo-henrique-da-silva-7a5831241/" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           aria-label="LinkedIn profile (opens in new tab)">
-                            <i class="bx bxl-linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://github.com/HenriqueLondon" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           aria-label="GitHub profile (opens in new tab)">
-                            <i class="bx bxl-github" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://www.instagram.com/londonhenrique/" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           aria-label="Instagram profile (opens in new tab)">
-                            <i class="bx bxl-instagram-alt" aria-hidden="true"></i>
-                        </a>
-                        <a href="https://wa.me/+351967341341" 
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           aria-label="WhatsApp contact (opens in new tab)">
-                            <i class="bx bxl-whatsapp" aria-hidden="true"></i>
-                        </a>
-                    </div>
-
-                    <div class="btn-group">
-                        <a href="data/Paulo Silva English CV.pdf" 
-                           class="btn btn-primary"
-                           target="_blank" 
-                           rel="noopener noreferrer"
-                           aria-label="Download CV (PDF)">
-                            Download CV
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section class="services section-padding bg-secondary" id="services" aria-labelledby="services-heading">
-            <div class="container">
-                <h2 id="services-heading" class="section-heading">Services</h2>
-                <div class="services-grid grid" role="list">
-                    <article class="service-card" role="listitem">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="bx bx-code-alt"></i>
-                        </div>
-                        <h3>Frontend Developer</h3>
-                        <p>
-                            I turn your ideas into fast, interactive and responsive websites or online stores. 
-                            Using the best development practices, I deliver interfaces that delight users.
-                        </p>
-                        <button class="btn btn-outline" data-service="frontend">Learn More</button>
-                    </article>
-
-                    <article class="service-card" role="listitem">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="bx bxs-palette"></i>
-                        </div>
-                        <h3>Web Design</h3>
-                        <p>
-                            Creativity and usability are the keys to successful design. 
-                            I make sure your site offers an intuitive experience that keeps visitors engaged.
-                        </p>
-                        <button class="btn btn-outline" data-service="design">Learn More</button>
-                    </article>
-
-                    <article class="service-card" role="listitem">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="bx bx-video"></i>
-                        </div>
-                        <h3>Video Editor</h3>
-                        <p>
-                            Bring your ideas to life with videos that tell stories. 
-                            From simple edits to complex productions, I ensure your videos are impactful.
-                        </p>
-                        <button class="btn btn-outline" data-service="video">Learn More</button>
-                    </article>
-
-                    <article class="service-card" role="listitem">
-                        <div class="service-icon" aria-hidden="true">
-                            <i class="bx bx-message-dots"></i>
-                        </div>
-                        <h3>Social Media</h3>
-                        <p>
-                            Creation of visual content and customized templates for social networks, 
-                            strengthening the brand and increasing online engagement.
-                        </p>
-                        <button class="btn btn-outline" data-service="social">Learn More</button>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section class="projects section-padding" id="projects" aria-labelledby="projects-heading">
-            <div class="container">
-                <h2 id="projects-heading" class="section-heading">Projects</h2>
-                <div class="projects-grid grid" role="list">
-                    <article class="project-card" role="listitem">
-                        <div class="project-image">
-                            <img src="img/web.png" alt="Click Creative website development" loading="lazy" width="600" height="400">
-                        </div>
-                        <div class="project-content">
-                            <h3>Web Development</h3>
-                            <p>Complete development of Click Creative website using HTML, CSS, and JavaScript.</p>
-                            <a href="https://clickcreative.pro/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                View Project <i class="bx bx-link-external"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem">
-                        <div class="project-image">
-                            <img src="img/web-design.jpg" alt="TravelScope blog design" loading="lazy" width="600" height="400">
-                        </div>
-                        <div class="project-content">
-                            <h3>Web Design</h3>
-                            <p>Creation of TravelScope blog with visual identity and branding.</p>
-                            <a href="https://travelscope.blog/" class="project-link" target="_blank" rel="noopener noreferrer">
-                                View Project <i class="bx bx-link-external"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem">
-                        <div class="project-image">
-                            <img src="img/social-media.png" alt="Social media templates for streamer" loading="lazy" width="600" height="400">
-                        </div>
-                        <div class="project-content">
-                            <h3>Social Media</h3>
-                            <p>Visual identity for streamer Helena with custom Twitch templates.</p>
-                            <a href="https://www.twitch.tv/hsfaisca" class="project-link" target="_blank" rel="noopener noreferrer">
-                                View Project <i class="bx bx-link-external"></i>
-                            </a>
-                        </div>
-                    </article>
-
-                    <article class="project-card" role="listitem">
-                        <div class="project-image">
-                            <img src="img/video-editor.png" alt="Video editing and motion graphics" loading="lazy" width="600" height="400">
-                        </div>
-                        <div class="project-content">
-                            <h3>Video Editor</h3>
-                            <p>Editing and motion graphics for social media promotional videos.</p>
-                            <a href="https://youtu.be/5Jnpvpk8kUE" class="project-link" target="_blank" rel="noopener noreferrer">
-                                View Project <i class="bx bx-link-external"></i>
-                            </a>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="skills section-padding bg-secondary" id="skills" aria-labelledby="skills-heading">
-            <div class="container">
-                <h2 id="skills-heading" class="section-heading">Technical Skills</h2>
-                <div class="skills-grid" role="list" aria-label="Technical skills">
-                    <div class="skill-item" role="listitem">
-                        <img src="img/html.png" alt="HTML5" width="48" height="48" loading="lazy">
-                        <span>HTML5</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/css.png" alt="CSS3" width="48" height="48" loading="lazy">
-                        <span>CSS3</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/javas.png" alt="JavaScript" width="48" height="48" loading="lazy">
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/figma.png" alt="Figma" width="48" height="48" loading="lazy">
-                        <span>Figma</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/vscode.png" alt="VS Code" width="48" height="48" loading="lazy">
-                        <span>VS Code</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/wordpress.png" alt="WordPress" width="48" height="48" loading="lazy">
-                        <span>WordPress</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/premiere.png" alt="Premiere Pro" width="48" height="48" loading="lazy">
-                        <span>Premiere Pro</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/capcut.png" alt="CapCut" width="48" height="48" loading="lazy">
-                        <span>CapCut</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/social.png" alt="Social Media" width="48" height="48" loading="lazy">
-                        <span>Social Media</span>
-                    </div>
-                    <div class="skill-item" role="listitem">
-                        <img src="img/photoshop.png" alt="Photoshop" width="48" height="48" loading="lazy">
-                        <span>Photoshop</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact section-padding" id="contact" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading" class="section-heading">Contact <span>Me</span></h2>
-                
-                <form id="contact-form" action="process-form.php" method="post" novalidate>
-                    <input type="hidden" name="csrf_token" id="csrf_token">
-                    
-                    <div class="form-grid">
-                        <div class="form-group">
-                            <label for="name">Full Name *</label>
-                            <input type="text" id="name" name="name" required 
-                                   minlength="2" maxlength="100"
-                                   placeholder="Your full name"
-                                   aria-describedby="name-error">
-                            <div class="error-message" id="name-error" aria-live="polite"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required
-                                   placeholder="your.email@example.com"
-                                   aria-describedby="email-error">
-                            <div class="error-message" id="email-error" aria-live="polite"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="tel" id="phone" name="phone"
-                                   pattern="^\+?[0-9\s\-\(\)]{10,20}$"
-                                   placeholder="+351 967 341 341"
-                                   aria-describedby="phone-error">
-                            <div class="error-message" id="phone-error" aria-live="polite"></div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject *</label>
-                            <input type="text" id="subject" name="subject" required
-                                   minlength="3" maxlength="200"
-                                   placeholder="Project inquiry"
-                                   aria-describedby="subject-error">
-                            <div class="error-message" id="subject-error" aria-live="polite"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message">Your Message *</label>
-                        <textarea id="message" name="message" required
-                                  rows="6" minlength="10" maxlength="2000"
-                                  placeholder="Tell me about your project..."
-                                  aria-describedby="message-error"></textarea>
-                        <div class="error-message" id="message-error" aria-live="polite"></div>
-                    </div>
-                    
-                    <div class="form-footer">
-                        <button type="submit" class="btn btn-primary" id="submit-btn">
-                            <span class="btn-text">Send Message</span>
-                            <span class="btn-loader" aria-hidden="true"></span>
-                        </button>
-                        <div class="form-status" id="form-status" aria-live="polite"></div>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-social" aria-label="Social media links">
-                <a href="https://www.linkedin.com/in/paulo-henrique-da-silva-7a5831241/" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   aria-label="LinkedIn">
-                    <i class="bx bxl-linkedin"></i>
-                </a>
-                <a href="https://github.com/HenriqueLondon" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   aria-label="GitHub">
-                    <i class="bx bxl-github"></i>
-                </a>
-                <a href="https://www.instagram.com/londonhenrique" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   aria-label="Instagram">
-                    <i class="bx bxl-instagram-alt"></i>
-                </a>
-                <a href="https://wa.me/+351967341341" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   aria-label="WhatsApp">
-                    <i class="bx bxl-whatsapp"></i>
-                </a>
-            </div>
-            
-            <nav class="footer-nav" aria-label="Footer navigation">
-                <ul class="footer-nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                </ul>
-            </nav>
-            
-            <div class="footer-meta">
-                <p class="copyright">
-                    &copy; <span id="current-year"></span> Henrique London. All rights reserved.
-                </p>
-                <p class="location">Based in Portugal</p>
-            </div>
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/paulo-henrique-da-silva-7a5831241/"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/HenriqueLondon?tab=overview&from=2024-08-01&to=2024-08-31"
+            ><i class="bx bxl-github"></i
+          ></a>
+          <a href="https://www.instagram.com/londonhenrique/"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+          <a href="https://wa.me/+351967341341"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
         </div>
+
+        <div class="btn-group">
+          <a href="data/Paulo Silva English CV.pdf" class="btn" target="_blank"
+            >My CV</a
+          >
+          <a href="#contact" class="btn">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2 class="heading">Services</h2>
+
+      <div class="service-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Frontend Developer</h3>
+          <p>
+            I turn your ideas into fast, interactive and responsive websites or
+            online store. Using the best development practices, I deliver
+            interfaces that delight and engage your users, regardless of the
+            device they use..
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxs-palette"></i>
+          <h3>Web Design</h3>
+          <p>
+            Creativity and usability are the keys to successful design. I make
+            sure your site or online store not only looks amazing, but also
+            offers an intuitive experience that keeps visitors engaged and
+            coming back again and again.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-video"></i>
+          <h3>Video Editor</h3>
+          <p>
+            Bring your ideas to life with videos that tell stories. From simple
+            edits to more complex productions, I make sure your videos are
+            impactful, well edited and ready to attract the attention of your
+            audience.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-message-dots"></i>
+          <h3>Social Media</h3>
+          <p>
+            Creation of visual content and customized templates for social
+            networks, strengthening the brand and increasing online engagement.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
+
+      <div class="projects-container">
+        <div class="projects-box">
+          <img src="img/web.png" alt="web developer" />
+          <div class="projects-info">
+            <h4>Web Development</h4>
+            <p>
+              Complete development of the Click Creative website, coded entirely
+              in HTML, CSS and JavaScript. Every aspect of the site was designed
+              to ensure a fluid and dynamic experience, with engaging texts and
+              an interactive interface. The project combines technical
+              innovation and artistic vision, creating a digital environment
+              that reflects the client's aesthetics and values. Ideal for
+              companies and individuals looking for a website that stands out
+              for its originality and functionality.
+            </p>
+            <a href="https://clickcreative.pro/"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="img/web design.jpg" alt="web design" />
+          <div class="projects-info">
+            <h4>Web Design</h4>
+            <p>
+              Creation of the TravelScope blog focused on tourism, travel tips
+              and more. The visual design was designed to be accessible and
+              attractive to different audiences, with a balanced color palette
+              and graphic elements that make the experience light and pleasant.
+              In addition to the website, the visual identity was also
+              developed, including the logo and branding, ensuring cohesion
+              throughout the project's communication.
+            </p>
+            <a href="https://travelscope.blog/"><i class="bx bx-link"></i></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="img/social media.png" alt="social media" />
+          <div class="projects-info">
+            <h4>Social Media</h4>
+            <p>
+              Development of a complete visual identity for streamer Helena,
+              including customized templates for her Twitch lives. The process
+              involved creating a futuristic theme with neon elements, using
+              Illustrator and Photoshop to build a dynamic and modern look that
+              reflects the streamer's personality. The project is ideal for
+              content creators who want to strengthen their brand and attract
+              more viewers through an impactful visual presence.
+            </p>
+            <a href="https://www.twitch.tv/hsfaisca/about"
+              ><i class="bx bx-link"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="projects-box">
+          <img src="img/video editor.png" alt="video editor" />
+          <div class="projects-info">
+            <h4>Video Editor</h4>
+            <p>
+              Editing and creating motion graphics for social media or
+              promotional videos, combining creativity and technique to produce
+              animations that capture the audience's attention. The project
+              involves using advanced editing software to create visual effects
+              that complement the narrative of the videos, resulting in
+              engaging, high-quality content. Perfect for companies, brands and
+              individuals who want to communicate their ideas in a visually
+              appealing and memorable way.
+            </p>
+            <a href="https://youtu.be/5Jnpvpk8kUE?si=8qiFndaEebxhzLdF"
+              ><i class="bx bx-link"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h2 class="heading">Skills</h2>
+        <div class="container">
+          <div class="row" id="skillsContainer">
+          <div class="bar">
+            <div class="info">
+              <img src="/img/html.png" alt="html icon">
+              <span>HTML</span>
+            </div>
+          </div>  
+          <div class="bar">
+            <div class="info">
+              <img src="/img/css.png" alt="css icon">
+              <span>CSS</span>
+            </div>
+          </div> 
+          <div class="bar">
+            <div class="info">
+              <img src="/img/javas.png" alt="javascript icon">
+              <span>JavaScript</span>
+            </div>
+          </div> 
+          <div class="bar">
+            <div class="info">
+              <img src="/img/figma.png" alt="figma icon">
+              <span>FIGMA</span>
+            </div>
+          </div> 
+          <div class="bar">
+            <div class="info">
+              <img src="/img/vscode.png" alt="vscode icon">
+              <span>VSCode</span>
+            </div>
+          </div> 
+          <div class="bar">
+            <div class="info">
+              <img src="/img/wordpress.png" alt="wordpress icon">
+              <span>Worpress</span>
+            </div>
+          </div> 
+          <div class="bar">
+            <div class="info">
+              <img src="/img/premiere.png" alt="Premiere icon">
+              <span>Premiere Pro</span>
+            </div>
+          </div> 
+          <div class="bar">
+            <div class="info">
+              <img src="/img/capcut.png" alt="capcut icon">
+              <span>CapCut</span>
+            </div>
+          </div> 
+          <div class="bar">
+            <div class="info">
+              <img src="/img/social.png" alt="social media icon">
+              <span>Social Media</span>
+            </div>
+          </div> 
+          <div class="bar">
+            <div class="info">
+              <img src="/img/photoshop.png" alt="photoshop icon">
+              <span>Photoshop</span>
+            </div>
+          </div> 
+          
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="process-form.php" method="post">
+        <div class="input-box">
+          <input type="text" name="name" placeholder="Full Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+
+        <div class="input-box">
+          <input type="tel" name="phone" placeholder="Number" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+        </div>
+
+        <textarea
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+          required
+        ></textarea>
+
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="https://www.linkedin.com/in/paulo-henrique-da-silva-7a5831241/"
+          ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a
+          href="https://github.com/HenriqueLondon?tab=overview&from=2024-08-01&to=2024-08-31"
+          ><i class="bx bxl-github"></i
+        ></a>
+        <a href="https://www.instagram.com/londonhenrique"
+          ><i class="bx bxl-instagram-alt"></i
+        ></a>
+        <a href="https://wa.me/+351967341341"
+          ><i class="bx bxl-whatsapp"></i
+        ></a>
+      </div>
+
+      <ul class="list">
+        <li>
+          <a href="#">FAQ</a>
+        </li>
+
+        <li>
+          <a href="#services">Services</a>
+        </li>
+
+        <li>
+          <a href="#">About Me</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact Me</a>
+        </li>
+
+        <li>
+          <a href="privacy.html">Privacy Policy</a>
+        </li>
+      </ul>
+
+      <p class="copyright">© Henrique London | All Rights Reserved</p>
     </footer>
 
-    <!-- JavaScript -->
-    <script src="script.js" defer></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
