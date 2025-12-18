@@ -1,18 +1,27 @@
-// Melhorar acessibilidade no JavaScript
-menuIcon.onclick = () => {
-    const isExpanded = menuIcon.classList.toggle('bx-x');
-    navbar.classList.toggle('active');
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
     
-    // Atualizar ARIA
-    menuIcon.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
-    menuIcon.setAttribute('aria-label', isExpanded ? 'Fechar menu' : 'Abrir menu');
-};
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a');
 
-// Fechar menu ao clicar em link (mobile)
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navbar.classList.remove('active');
-        menuIcon.classList.remove('bx-x');
-        menuIcon.setAttribute('aria-expanded', 'false');
-    });
-});
+window.onscroll = () =>{
+    sections.forEach(sec =>{
+        let top = window.scrollY;
+        let offset = sec.offsetTop - 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute('id');
+
+        if(top >= offset && top < offset + height){
+            navLinks.forEach(links => {
+                links.classList.remove('active');
+                document.querySelector('header nav a[href*=' + id + ']').classList.add
+                ('active')
+            })
+        }
+    })
+}
+
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x');
+    navbar.classList.toggle('active');
+}
